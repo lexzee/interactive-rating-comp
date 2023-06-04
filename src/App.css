@@ -33,7 +33,7 @@
   padding: .2rem;
 }
 
-.rating-state > .description {
+.description {
   line-height: 1.5;
   font-size: 15px;
   color: hsl(217, 12%, 63%);
@@ -48,6 +48,7 @@
 .rate {
   color: hsl(217, 12%, 63%);
   background-color: hsla(216, 12%, 54%, .1);
+  font-weight: 700;
   /* font-family: 'Overpass', sans-serif; */
   font-size: 15px;
   border: none;
@@ -69,4 +70,24 @@
   border-radius: 50px;
   background-color: hsl(25, 97%, 53%);
   color: white;
+}
+
+
+.thank-you-state {
+  color: white;
+  padding: 2rem;
+  place-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.selected {
+  color: hsl(25, 97%, 53%);
+  background-color: hsla(216, 12%, 54%, .1);
+  padding: .5rem .9rem;
+  font-size: 1rem;
+  border-radius: 100px;
+  margin: 1.5rem 0;
+}
+.thank-you-state .header {
+  margin: 0;
 }

@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import './App.css'
-import starIcon from './images/icon-star.svg';
-import thankIcon from './images/illustration-thank-you.svg'
+// import starIcon from './images/icon-star.svg';
+// import thankIcon from './images/illustration-thank-you.svg'
+import Rating from './components/Rating';
+import ThankYou from './components/ThankYou';
 
 function App() {
 
@@ -10,7 +12,7 @@ function App() {
       <div className="App">
 
         {/* <!-- Rating state start --> */}
-        <div className="rating-state">
+        {/* <div className="rating-state">
           <div className="icon">
             <img src={starIcon} alt="#" className='starIcon'/>
           </div>
@@ -30,22 +32,24 @@ function App() {
           <button className="submit">
             Submit
           </button>
-        </div>
+        </div> */}
+        <Rating />
         {/* <!-- Rating state end --> */}
 
         {/* <!-- Thank you state start --> */}
-        <div className="thank-you-state">
+        {/* <div className="thank-you-state">
           <img src={thankIcon} alt="Thank you Illustration" className="thankIcon" />
-        </div>
-        <p className="selected">
-          You selected 4 out of 5
-        </p>
-        <h1 className="header">
-          Thank you!
-        </h1>
-        <p className="description">
-          We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!
-        </p>
+          <p className="selected">
+            You selected 4 out of 5
+          </p>
+          <h1 className="header">
+            Thank you!
+          </h1>
+          <p className="description">
+            We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!
+          </p>
+        </div> */}
+        <ThankYou />
         {/* <!-- Thank you state end --> */}
       </div>
 
