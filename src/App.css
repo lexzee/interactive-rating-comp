@@ -40,8 +40,9 @@
 }
 
 .rating{
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
+  justify-content: space-between;
+  /* grid-template-columns: repeat(5, 1fr); */
   margin: 1.5rem 0;
 }
 .rate {
