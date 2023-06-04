@@ -2,3 +2,70 @@
   margin: 0 auto;
   padding: 0;
 }
+
+.App {
+  background-color: hsl(213, 19%, 18%);
+  text-align: center;
+  /* padding: 1.5rem;
+  margin: 1.5rem; */
+  max-width: 375px;
+  border-radius: 1rem;
+}
+
+.rating-state {
+  color: white;
+  text-align: left;
+  padding: 2rem;
+}
+.icon{
+  display: flex;
+  position: relative;
+  place-items: center;
+  border-radius: 100%;
+  background-color: hsla(216, 12%, 54%, .1);
+  width: 20px;
+  height: 20px;
+  padding: .6rem;
+}
+.starIcon {
+  /* display: block; */
+  width: 100%;
+  padding: .2rem;
+}
+
+.rating-state > .description {
+  line-height: 1.5;
+  font-size: 15px;
+  color: hsl(217, 12%, 63%);
+}
+
+.rating{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 1.5rem 0;
+}
+.rate {
+  color: hsl(217, 12%, 63%);
+  background-color: hsla(216, 12%, 54%, .1);
+  /* font-family: 'Overpass', sans-serif; */
+  font-size: 15px;
+  border: none;
+  border-radius: 100%;
+  width: 45px;
+  height: 45px;
+}
+
+.submit {
+  font-family: 'Overpass', sans-serif;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  font-weight: 700;
+  /* place-items: center;
+  place-content: center; */
+  padding: .7rem;
+  border: none;
+  border-radius: 50px;
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}

@@ -12,7 +12,7 @@ function App() {
         {/* <!-- Rating state start --> */}
         <div className="rating-state">
           <div className="icon">
-            <img src={starIcon} alt="#" />
+            <img src={starIcon} alt="#" className='starIcon'/>
           </div>
           <h1 className="header">
             How did we do?
