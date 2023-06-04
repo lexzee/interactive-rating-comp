@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import starIcon from '../images/icon-star.svg';
 
 const Rating = () => {
@@ -19,9 +20,11 @@ const Rating = () => {
         <button className="rate">4</button>
         <button className="rate">5</button>
       </div>
-      <button className="submit">
-        Submit
-      </button>
+      <Link to='thanks'>
+        <button className="submit">
+          Submit
+        </button>
+      </Link>
     </div>
   )
 }
