@@ -1,7 +1,12 @@
 import { Link } from 'react-router-dom';
 import starIcon from '../images/icon-star.svg';
+import { useState } from 'react';
 
-const Rating = () => {
+const Rating = ({ handleClick}) => {
+  const handleHover = (e) => {
+    // console.log(`Hovered over ${e.target.id}`)
+    // console.log(e.target.style)
+  }
   return (
     <div className="rating-state">
       <div className="icon">
@@ -14,11 +19,36 @@ const Rating = () => {
         Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
       </p>
       <div className="rating">
-        <button className="rate">1</button>
-        <button className="rate">2</button>
-        <button className="rate">3</button>
-        <button className="rate">4</button>
-        <button className="rate">5</button>
+        <button
+          className="rate"
+          id='1'
+          onClick={handleClick}
+          onMouseOver={handleHover}
+        >1</button>
+        <button
+          className="rate"
+          id='2'
+          onClick={handleClick}
+          onMouseOver={handleHover}
+        >2</button>
+        <button
+          className="rate"
+          id='3'
+          onClick={handleClick}
+          onMouseOver={handleHover}
+        >3</button>
+        <button
+          className="rate"
+          id='4'
+          onClick={handleClick}
+          onMouseOver={handleHover}
+        >4</button>
+        <button
+          className="rate"
+          id='5'
+          onClick={handleClick}
+          onMouseOver={handleHover}
+        >5</button>
       </div>
       <Link to='thanks'>
         <button className="submit">

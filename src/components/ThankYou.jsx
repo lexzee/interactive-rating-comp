@@ -1,11 +1,11 @@
 import thankIcon from '../images/illustration-thank-you.svg'
 
-const ThankYou = () => {
+const ThankYou = ({val}) => {
   return (
     <div className="thank-you-state">
       <img src={thankIcon} alt="Thank you Illustration" className="thankIcon" />
       <p className="selected">
-        You selected 4 out of 5
+        You selected {val.id} out of 5
       </p>
       <h1 className="header">
         Thank you!
