@@ -24,7 +24,7 @@ function App() {
     <>
       <div className="App">
         <Routes>
-          <Route path='/' element={<Rating handleClick={handleClick} />} />
+          <Route path='/' element={<Rating handleClick={handleClick} rate={rate.id} />} />
           <Route path='/thanks' element={<ThankYou val={rate} />} />
         </Routes>
         {/* <Rating />

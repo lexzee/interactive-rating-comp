@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom';
 import starIcon from '../images/icon-star.svg';
-import { useState } from 'react';
 
-const Rating = ({ handleClick}) => {
+const Rating = ({ handleClick, rate}) => {
   const handleHover = (e) => {
     // console.log(`Hovered over ${e.target.id}`)
     // console.log(e.target.style)
@@ -51,7 +50,7 @@ const Rating = ({ handleClick}) => {
         >5</button>
       </div>
       <Link to='thanks'>
-        <button className="submit">
+        <button className="submit" disabled={rate <= 0 ? true : false}>
           Submit
         </button>
       </Link>
