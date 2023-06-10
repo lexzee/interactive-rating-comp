@@ -13,18 +13,18 @@ function App() {
   const handleClick= (e) => {
     setRate((state) => {
       return {
-        ...state,
         id: e.target.id,
         style: {backgroundColor: 'blue'}
       }
     })
+    console.log("lel")
   }
 
   return (
     <>
       <div className="App">
         <Routes>
-          <Route path='/' element={<Rating handleClick={handleClick} rate={rate.id} />} />
+          <Route path='/' element={<Rating handleClick={handleClick} rate={rate} />} />
           <Route path='/thanks' element={<ThankYou val={rate} />} />
         </Routes>
         {/* <Rating />
