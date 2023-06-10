@@ -3,7 +3,6 @@ export const RatingCircle = ({rate,value,handleClick}) => {
 
     const {id,style} = rate
 
-    const btnStyle = {backgroundColor: 'blue'}
 
     const handleHover = (e) => {
         e.target.classList.toggle("hovered")
@@ -15,7 +14,7 @@ export const RatingCircle = ({rate,value,handleClick}) => {
         onClick={handleClick}
         onMouseOver= {handleHover}
         onMouseLeave = {handleHover}
-        style = {{ backgroundColor: +id === value  ? "red" : "",}}
+        style = {{ backgroundColor: +id === value  ? "blue" : "",}}
       >{value}</button>
     )
 }
