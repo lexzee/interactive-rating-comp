@@ -91,3 +91,7 @@
 .thank-you-state .header {
   margin: 0;
 }
+
+.hovered {
+  background-color: yellow;
+}
